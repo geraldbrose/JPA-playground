@@ -1,1 +1,49 @@
-/target/
+*.class
+
+*.log
+
+target/
+
+### IntelliJ IDEA ###
+.idea
+*.iws
+*.iml
+*.ipr
+
+# Package Files #
+*.jar
+*.war
+*.ear
+
+# virtual machine crash logs, see http://www.java.com/en/download/help/error_hotspot.xml
+hs_err_pid*
+
+### Ansible ###
+# Ansible retry files
+*.retry
+.ansible_roles/
+/uploaded-files/
+/import/
+
+### Vagrant ###
+.vagrant/
+
+# End of https://www.gitignore.io/api/ansible,vagrant
+/proca-dev-test.*.db
+DocumentDB.Spatial.Sql.dll
+Microsoft.Azure.Documents.ServiceInterop.dll
+config/servicebus.properties
+export/
+logs/
+src/main/java/com/akelius/property/importer/immotion/
+src/main/resources/META-INF/
+src/main/resources/config/
+src/test/java/com/akelius/property/importer/voyager/
+test-imports/
+test-uploaded-files/
+/logs/*.json
+*.mv.db
+/proca-dev-test.mv.db
+node/
+node_modules/
+package-lock.json
