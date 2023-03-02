@@ -43,19 +43,19 @@ public class LibraryLazyBatch extends AbstractEntity {
     private String name;
 
     @OneToMany(fetch = FetchType.LAZY)
-    @BatchSize(size = 5)
+    @BatchSize(size = 20)
     private Set<Advert> adverts = new HashSet<>();
 
     @OneToMany(fetch = FetchType.LAZY)
-    @BatchSize(size = 5)
+    @BatchSize(size = 20)
     private Set<Article> articles = new HashSet<>();
 
     @OneToMany(fetch = FetchType.LAZY)
-    @BatchSize(size = 5)
+    @BatchSize(size = 20)
     private Set<Book> books = new HashSet<>();
 
     @OneToMany(fetch = FetchType.LAZY)
-    @BatchSize(size = 5)
+    @BatchSize(size = 20)
     private Set<BlogPost> blogPosts = new HashSet<>();
 
 }
